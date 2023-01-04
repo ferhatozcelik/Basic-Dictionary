@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
+    android:orientation="horizontal"
     android:paddingTop="12dp"
-    android:paddingBottom="12dp"
-    android:orientation="horizontal">
-
+    android:paddingBottom="12dp">
 
     <ImageView
         android:layout_width="24dp"
@@ -23,8 +23,8 @@
         android:fontFamily="@font/roboto_medium"
         android:gravity="center_vertical"
         android:padding="4dp"
-        android:text="Home"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        tools:text="Home" />
 
     <ImageView
         android:layout_width="24dp"

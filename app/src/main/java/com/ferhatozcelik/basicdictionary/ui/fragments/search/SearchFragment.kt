@@ -43,10 +43,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
 
         viewModel.getLastSearchData().observe(viewLifecycleOwner) {
             val adapter = SearchAdapter(it, searchItemClickListener)
-            val linearLayoutManager = LinearLayoutManager(context)
-            linearLayoutManager.orientation = LinearLayoutManager.VERTICAL
-            binding.lastSearchingList.setHasFixedSize(true)
-            binding.lastSearchingList.layoutManager = linearLayoutManager
             binding.lastSearchingList.adapter = adapter
         }
 

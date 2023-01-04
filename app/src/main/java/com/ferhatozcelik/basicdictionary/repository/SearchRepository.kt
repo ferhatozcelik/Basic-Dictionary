@@ -2,7 +2,6 @@ package com.ferhatozcelik.basicdictionary.repository
 
 import com.ferhatozcelik.basicdictionary.data.entity.Search
 import com.ferhatozcelik.basicdictionary.data.local.SearchDao
-import com.ferhatozcelik.basicdictionary.data.model.APIResponse
 import com.ferhatozcelik.basicdictionary.data.model.Synonym
 import com.ferhatozcelik.basicdictionary.data.model.TranslateResult
 import com.ferhatozcelik.basicdictionary.data.remote.AppApi

@@ -10,6 +10,6 @@
     android:fontFamily="@font/roboto_medium"
     android:textColor="@color/black"
     android:background="@drawable/button_background"
-    android:text="house"
+    tools:text="house"
     android:textAllCaps="false"
     tools:ignore="TouchTargetSizeCheck" />

@@ -8,23 +8,22 @@
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.ferhatozcelik.basicdictionary.ui.fragments.search.SearchFragment"
-        tools:layout="@layout/fragment_search"
-        android:label="Search Fragment" >
+        android:label="Search Fragment"
+        tools:layout="@layout/fragment_search">
         <action
             android:id="@+id/action_searchFragment_to_searchDetailFragment"
             app:destination="@id/searchDetailFragment"
-            app:popUpTo="@id/searchFragment"
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"/>
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/searchFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/searchDetailFragment"
-        tools:layout="@layout/fragment_search_detail"
         android:name="com.ferhatozcelik.basicdictionary.ui.fragments.searchdetail.SearchDetailFragment"
-        android:label="Search Detail Fragment" >
-    </fragment>
+        android:label="Search Detail Fragment"
+        tools:layout="@layout/fragment_search_detail"></fragment>
 
 </navigation>

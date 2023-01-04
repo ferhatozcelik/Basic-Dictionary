@@ -1,15 +1,11 @@
 package com.ferhatozcelik.basicdictionary.ui.adapters
 
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.ferhatozcelik.basicdictionary.data.entity.Search
-import com.ferhatozcelik.basicdictionary.data.model.TranslateResult
-import com.ferhatozcelik.basicdictionary.data.model.WordDetail
 import com.ferhatozcelik.basicdictionary.data.model.WordDetailList
 import com.ferhatozcelik.basicdictionary.databinding.MeaningsItemBinding
-import com.ferhatozcelik.basicdictionary.databinding.SearchItemBinding
-import com.ferhatozcelik.basicdictionary.interfaces.ItemClickListener
 import com.ferhatozcelik.basicdictionary.util.StringExtension.Companion.capitalize
 
 class SearchDetailAdapter(
@@ -17,15 +13,17 @@ class SearchDetailAdapter(
 ) : RecyclerView.Adapter<SearchDetailAdapter.SearchViewHolder>() {
     lateinit var itemGoalsPreviewBinding: MeaningsItemBinding
 
-     class SearchViewHolder(binding: MeaningsItemBinding): RecyclerView.ViewHolder(binding.root) {
+    class SearchViewHolder(binding: MeaningsItemBinding) : RecyclerView.ViewHolder(binding.root) {
         var binding: MeaningsItemBinding
+
         init {
             this.binding = binding
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchViewHolder {
-        val binding = MeaningsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =
+            MeaningsItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return SearchViewHolder(binding)
     }
 
@@ -38,7 +36,15 @@ class SearchDetailAdapter(
             numberTextView.text = wordDetailItem.partOfSpeechNumber.toString() + " - "
             partOfSpeechTextView.text = wordDetailItem.partOfSpeech.toString().capitalize()
             definitionTextView.text = wordDetailItem.definitionText.toString()
-            exampleTextview.text = wordDetailItem.exampleText.toString()
+
+            if (exampleTextview.text == null){
+                exampleTitleTextview.visibility = View.GONE
+                exampleTextview.visibility = View.GONE
+            }else{
+                exampleTitleTextview.visibility = View.VISIBLE
+                exampleTextview.visibility = View.VISIBLE
+                exampleTextview.text = wordDetailItem.exampleText.toString()
+            }
         }
     }
 

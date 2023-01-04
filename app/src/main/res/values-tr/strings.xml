@@ -5,13 +5,13 @@
     <string name="you_can_try">You can try the search again at later time or head to the web instead.</string>
     <string name="network_failure">Network Failure</string>
     <string name="internet_connect">Internet Connect</string>
-    <string name="search">Search</string>
-    <string name="recent_search">Recent search</string>
-    <string name="back_button">Back</string>
-    <string name="clear_filter">Clear Filter</string>
-    <string name="noun">Noun</string>
-    <string name="verb">Verb</string>
-    <string name="adjective">Adjective</string>
-    <string name="synonym">Synonym</string>
-    <string name="example">Example</string>
+    <string name="search">Ara</string>
+    <string name="recent_search">Son Aramalar</string>
+    <string name="back_button">Geri</string>
+    <string name="clear_filter">Filtreyi Temizle</string>
+    <string name="noun">İsim</string>
+    <string name="verb">Fiil</string>
+    <string name="adjective">Sıfat</string>
+    <string name="synonym">Eşanlamlı sözcük</string>
+    <string name="example">Örnek</string>
 </resources>

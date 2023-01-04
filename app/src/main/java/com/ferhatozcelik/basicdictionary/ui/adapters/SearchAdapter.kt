@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.ferhatozcelik.basicdictionary.data.entity.Search
-import com.ferhatozcelik.basicdictionary.data.model.TranslateResult
 import com.ferhatozcelik.basicdictionary.databinding.SearchItemBinding
 import com.ferhatozcelik.basicdictionary.interfaces.ItemClickListener
 

@@ -26,8 +26,8 @@
             android:id="@+id/partOfSpeech_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/roboto_medium_italic"
             android:textColor="@color/colorPrimary"
@@ -57,9 +57,10 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_medium"
+        android:text="@string/example"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
-        android:text="Example" />
+        android:textSize="14sp" />
+
     <TextView
         android:id="@+id/example_textview"
         android:layout_width="match_parent"

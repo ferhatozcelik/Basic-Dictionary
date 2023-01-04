@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@null"
-        android:contentDescription="Back Button"
+        android:contentDescription="@string/back_button"
         android:src="@mipmap/arrow_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,7 +36,7 @@
             android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Home"
+            tools:text="Home"
             android:textColor="@color/black"
             android:textSize="34sp" />
 
@@ -47,7 +47,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="/(H)Ə"
+            tools:text="/(H)Ə"
             android:textColor="#303030"
             android:textSize="14sp" />
 
@@ -65,7 +65,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@null"
-                android:contentDescription="Clear Filter"
+                android:contentDescription="@string/clear_filter"
                 android:src="@mipmap/clips"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -76,9 +76,9 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto_medium"
                 android:background="@drawable/button_background"
-                android:text="Noun"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/noun"
                 android:textAllCaps="false"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -89,9 +89,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto_medium"
                 android:background="@drawable/button_background"
-                android:text="Verb"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/verb"
                 android:textAllCaps="false"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -102,9 +102,9 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/roboto_medium"
                 android:background="@drawable/button_background"
-                android:text="Adjective"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/adjective"
                 android:textAllCaps="false"
                 tools:ignore="TouchTargetSizeCheck" />
 
@@ -117,12 +117,12 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toTopOf="@+id/synonym_title_texview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:itemCount="80"
         tools:listitem="@layout/meanings_item" />
 
@@ -134,9 +134,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Synonym"
+        android:text="@string/synonym"
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/synonym_recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -148,15 +148,15 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="4"
         tools:ignore="SpeakableTextPresentCheck"
         tools:itemCount="5"
         tools:layoutManager="GridLayoutManager"
-        tools:listitem="@layout/synonym_item"/>
+        tools:listitem="@layout/synonym_item" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

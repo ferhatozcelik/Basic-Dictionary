@@ -4,13 +4,14 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.ferhatozcelik.basicdictionary.data.entity.Search
 
-@Dao interface SearchDao {
+@Dao
+interface SearchDao {
 
     @Query("SELECT * FROM search_table ORDER BY searchWordCreateAt DESC LIMIT 5")
-    fun getSearch() : LiveData<List<Search>>
+    fun getSearch(): LiveData<List<Search>>
 
     @Query("SELECT * FROM search_table ORDER BY searchWordCreateAt ASC")
-    suspend fun getActiveAllSearch() : List<Search>?
+    suspend fun getActiveAllSearch(): List<Search>?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(search: Search)
@@ -28,12 +29,12 @@ import com.ferhatozcelik.basicdictionary.data.entity.Search
     suspend fun insertOrUpdate(search: Search) {
         val itemsFromDB: List<Search> = getItemByIdWord(search.searchWord!!)
         val itemsFromAllData: List<Search>? = getActiveAllSearch()
-        if (itemsFromDB.isEmpty()){
-            if (itemsFromAllData!!.isNotEmpty() && itemsFromAllData.size >= 5){
+        if (itemsFromDB.isEmpty()) {
+            if (itemsFromAllData!!.isNotEmpty() && itemsFromAllData.size >= 5) {
                 delete(itemsFromAllData[0])
             }
             insert(search)
-        } else{
+        } else {
             update(Search(itemsFromDB[0].searchId!!, search.searchWord, search.searchWordCreateAt))
         }
     }

@@ -4,13 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.ferhatozcelik.basicdictionary.R
 import com.ferhatozcelik.basicdictionary.data.model.*
 import com.ferhatozcelik.basicdictionary.databinding.FragmentSearchDetailBinding
@@ -94,7 +92,7 @@ class SearchDetailFragment : Fragment(R.layout.fragment_search_detail) {
                 }
                 is APIResponse.Error<*> -> {
                     val resultError = it.result as ErrorResult
-                    Toast.makeText(context,resultError.message , Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, resultError.message, Toast.LENGTH_SHORT).show()
                     progressDialog.cancelDelayDialog()
                     activity?.findNavController(R.id.nav_host_fragment)?.popBackStack()
                 }
@@ -109,19 +107,19 @@ class SearchDetailFragment : Fragment(R.layout.fragment_search_detail) {
     }
 
     private fun FilterButtonActive(wordDetailList: List<WordDetailList>) {
-        if (!activiteButtonFlag){
+        if (!activiteButtonFlag) {
             binding.nounButton.visibility = View.GONE
             binding.verbButton.visibility = View.GONE
             binding.adjButton.visibility = View.GONE
             for (item in wordDetailList) {
-                when(item.partOfSpeech){
-                    "noun" ->{
+                when (item.partOfSpeech) {
+                    "noun" -> {
                         binding.nounButton.visibility = View.VISIBLE
                     }
-                    "verb" ->{
+                    "verb" -> {
                         binding.verbButton.visibility = View.VISIBLE
                     }
-                    "adjective" ->{
+                    "adjective" -> {
                         binding.adjButton.visibility = View.VISIBLE
                     }
                 }

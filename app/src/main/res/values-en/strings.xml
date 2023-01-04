@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Basic Dictionary</string>
-    <string name="sorry_pal">Sorry pal, we couldn\'t find definitions for the word you were looking for.</string>
-    <string name="no_fefinitions_found">No Definitions Found</string>
-    <string name="you_can_try">You can try the search again at later time or head to the web instead.</string>
-    <string name="network_failure">Network Failure</string>
-    <string name="internet_connect">Internet Connect</string>
+    <string name="sorry_pal">Üzgünüz dostum, aradığınız kelimenin tanımını bulamadık.</string>
+    <string name="no_fefinitions_found">Tanım Bulunamadı</string>
+    <string name="you_can_try">Aramayı daha sonra tekrar deneyebilir veya bunun yerine web\'e gidebilirsiniz.</string>
+    <string name="network_failure">Ağ hatası</string>
+    <string name="internet_connect">İnternet Bağlantısı</string>
     <string name="search">Search</string>
     <string name="recent_search">Recent search</string>
     <string name="back_button">Back</string>
