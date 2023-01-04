@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/number_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            tools:text="1 - " />
+
+        <TextView
+            android:id="@+id/partOfSpeech_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/roboto_medium_italic"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp"
+            tools:text="Noun" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/definition_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        tools:text="One’s native land; the place or country in which one dwells; the place where one’s ancestors dwell or dwelt." />
+
+    <TextView
+        android:id="@+id/example_title_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:text="Example" />
+    <TextView
+        android:id="@+id/example_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/roboto_medium_italic"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp"
+        tools:text="the home of the pine" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F8F8F8" />
+
+</LinearLayout>
