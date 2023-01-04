@@ -13,6 +13,7 @@ The App is using the [Dictionary Api] to translate word.
 - [ViewModel] - Stores UI-related data that isn't destroyed on UI changes.
 - [ViewBinding] - Generates a binding class for each XML layout file present in that module and allows you to more easily write code that interacts with views.
 - [Jetpack Navigation] - Navigation refers to the interactions that allow users to navigate across, into, and back out from the different pieces of content within your app
+   
    [ViewModel]: <https://developer.android.com/topic/libraries/architecture/viewmodel>  
    [Jetpack Navigation]: <https://developer.android.com/guide/navigation/>  
    [Hilt-Dagger]: <https://dagger.dev/hilt/>  
