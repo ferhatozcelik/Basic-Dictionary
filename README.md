@@ -1,4 +1,4 @@
-# Basic_Dictionary
+# Basic Dictionary
 #### A simple Basic Dictionary built to demonstrate the use of modern android architecture component with MVVM Architecture 🏗
 
 The App is using the [Dictionary Api] to translate word.
