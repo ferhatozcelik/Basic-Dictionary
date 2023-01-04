@@ -32,3 +32,18 @@ The App is using the [Dictionary Api] to translate word.
 
 This app uses [MVVM (Model View View-Model)] architecture.
 
+### Screenshots
+
+|<img src="screenshots/screenshot_1.jpg" width="280" height="600">|<img src="screenshots/screenshot_2.jpg" width="280" height="600">|
+
+### Author
+👤 Ferhat OZCELIK
+
+Github: @ferhatozcelik
+LinkedIn:https://www.linkedin.com/in/ferhatozcelik/
+Show your support
+Give a ⭐️ if this project helped you!
+
+### License
+Copyright © 2022 Ferhat OZCELIK.
+This project is Apache License, Version 2.0 (the "License") licensed.

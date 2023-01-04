@@ -37,7 +37,7 @@ class SearchDetailAdapter(
             partOfSpeechTextView.text = wordDetailItem.partOfSpeech.toString().capitalize()
             definitionTextView.text = wordDetailItem.definitionText.toString()
 
-            if (exampleTextview.text == null){
+            if (wordDetailItem.exampleText == null){
                 exampleTitleTextview.visibility = View.GONE
                 exampleTextview.visibility = View.GONE
             }else{
