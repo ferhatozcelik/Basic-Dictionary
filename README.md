@@ -23,7 +23,6 @@ The App is using the [Dictionary Api] to translate word.
    [LiveData]: <https://developer.android.com/topic/libraries/architecture/livedata/>
    [Retrofit]: <https://square.github.io/retrofit/>
    [ViewModel]: <https://developer.android.com/topic/libraries/architecture/viewmodel>
-   [Glide]: <https://github.com/bumptech/glide>
    [Kotlin]: <https://kotlinlang.org>
    [Coroutines]: <https://kotlinlang.org/docs/coroutines-overview.html>
    [MVVM (Model View View-Model)]: <https://developer.android.com/jetpack/guide#recommended-app-arch>
