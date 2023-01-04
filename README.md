@@ -1,7 +1,7 @@
 # Basic_Dictionary
 #### A simple Basic Dictionary built to demonstrate the use of modern android architecture component with MVVM Architecture 🏗
 
-The App is using the [Dictionary Api] to searching news.
+The App is using the [Dictionary Api] to translate word.
 
 ### Build With 🏗️
 - [Kotlin] - Programming language for Android
