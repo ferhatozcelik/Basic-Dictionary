@@ -34,60 +34,13 @@
       ]
     },
     {
-      "groupName": "kotlin dependencies",
+      "groupName": "admost dependencies",
       "matchPackagePatterns": [
-        "org.jetbrains.kotlin:*",
-        "com.google.devtools.ksp",
-        "composeOptions"
-      ]
-    },
-    {
-      "groupName": "coroutine dependencies",
-      "matchPackagePatterns": [
-        "io.coil-kt:*",
-        "org.jetbrains.kotlinx:*"
-      ]
-    },
-    {
-      "groupName": "plugin dependencies",
-      "matchPackagePatterns": [
-        "com.android.library",
-        "com.android.application",
-        "app.cash.paparazzi"
-      ]
-    },
-    {
-      "groupName": "sonar",
-      "matchPackagePatterns": [
-        "org.sonarqube"
-      ]
-    },
-    {
-      "groupName": "target sdk compatibility",
-      "matchPackagePatterns": [
-        "androidx.navigation:navigation-compose",
-        "androidx.activity:activity-compose"
-      ]
-    },
-    {
-      "groupName": "ktlint",
-      "matchPackagePatterns": [
-        "org.jlleitschuh.gradle.ktlint"
-      ]
-    },
-    {
-      "groupName": "test dependencies",
-      "matchPackagePatterns": [
-        "com.google.truth:truth",
-        "androidx.compose.ui:ui-test-junit4",
-        "androidx.compose.ui:ui-test-manifest",
-        "org.robolectric:robolectric",
-        "junit:junit",
-        "androidx.test:core-ktx"
+        "com.admost.sdk:amr"
       ]
     }
   ],
   "ignoreDeps": [
-    "androidx.emoji2:emoji2"
+  
   ]
 }
